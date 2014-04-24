@@ -108,7 +108,7 @@ Func compareFiles()
 				$temp = IniRead($currentFile, "MeshData", "Mesh" & $i, -1)
 				If $temp <> -1 Then
 					$temp = StringSplit($temp, ",", 2)
-					If $temp[2] <> 0x00013CB6 And $temp[2] <> 0x00013C2E And $temp[2] <> 0x0000D50F Then
+					If $temp[2] <> 0x00013CB6 And $temp[2] <> 0x00013C2E And $temp[2] <> 0x0000D50F And $temp[2] <> 0x00010A3D Then
 						$temp_count_scene += 1
 						$temp_Scene_table_totale[$temp_count_scene - 1][0] = $temp[0]
 						$temp_Scene_table_totale[$temp_count_scene - 1][1] = $temp[1]
