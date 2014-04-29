@@ -102,7 +102,7 @@ Func compareFiles()
 		If $area = $temp_area Then
 			$temp_meshSize = IniRead($directory[$z], "SceneInfo", "SceneSize", -1)
 			$temp_count_scene = 0
-			Dim $temp_Scene_table_totale[$meshSize + 1][8]
+			Dim $temp_Scene_table_totale[$temp_meshSize + 1][8]
 			$currentFile = $directory[$z]
 			For $i = 0 To $temp_meshSize
 				$temp = IniRead($currentFile, "MeshData", "Mesh" & $i, -1)
